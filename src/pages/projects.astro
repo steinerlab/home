@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Grid from '../components/ui/Grid.astro'
+import { getPath } from '../lib/path'
+
+const title = "Projects"
+
+const currentProjects = {
+    gridTitle: "Current Projects",
+    gridItems: [
+        {
+            title: "HiFlOWS",
+            description: "High-order numerical methods for Flow simulations in Weather and Sustainability",
+            link: getPath('/projects/hiflows')
+        },
+        {
+            title: "Project 2",
+            description: "Description of research project 2"
+        },
+        {
+            title: "Project 3",
+            description: "Description of research project 3"
+        }
+    ]
+}
+
+const pastProjects = {
+    gridTitle: "Past Projects",
+    gridItems: [
+        {
+            title: "Past Project 1",
+            description: "Description of past research project 1"
+        },
+        {
+            title: "Past Project 2",
+            description: "Description of past research project 2"
+        }
+    ]
+}
+---
+
+<Layout title={title}>
+    <div class="mb-8">
+        <h1 class="text-4xl font-bold mb-4">{title}</h1>
+        <p class="text-lg text-base-content/80">A collection of research projects and implementations.</p>
+    </div>
+
+    <div class="space-y-12">
+        <Grid {...currentProjects} />
+        <Grid {...pastProjects} />
+    </div>
+</Layout>
