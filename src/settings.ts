@@ -3,7 +3,7 @@ export const template = {
     base: "/homepage/",
     menu_left: false,
     transitions: true,
-    lightTheme: "dark",
+    lightTheme: "light",
     darkTheme: "dark",
     excerptLength: 200,
     postPerPage: 5
