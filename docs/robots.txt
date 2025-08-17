@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://steinerlab.github.io/steiner_lab/sitemap-index.xml

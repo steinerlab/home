@@ -13,5 +13,6 @@ export default defineConfig({
     output: "static",
     site: "https://steinerlab.github.io/home/",
     base: "/home/",
+    outDir: "./docs",
     integrations: [], // add your integrations here
 });
