@@ -10,9 +10,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-    output: "static",
-    site: "https://steinerlab.github.io/home/",
-    base: "/home/",
-    outDir: "./docs",
-    integrations: [], // add your integrations here
+    integrations: [react(), tailwind(), sitemap()],
+    site: template.website_url,
+    base: template.base,
 });
