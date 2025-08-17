@@ -3,7 +3,7 @@ export const template = {
     base: "/steiner_lab",
     menu_left: false,
     transitions: true,
-    lightTheme: "light",
+    lightTheme: "dark",
     darkTheme: "dark",
     excerptLength: 200,
     postPerPage: 5
