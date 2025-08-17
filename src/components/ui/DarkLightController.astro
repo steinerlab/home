@@ -13,12 +13,10 @@ import {template} from  '../../settings.ts'
     document.addEventListener('DOMContentLoaded', function () {
       const checkbox = document.getElementById('theme-toggle');
       const html = document.documentElement;
-      const darkTheme = "{template.darkTheme}";
-      const lightTheme = "{template.lightTheme}";
+      const darkTheme = "/*@__PURE__*/" + "${template.darkTheme}";
+      const lightTheme = "/*@__PURE__*/" + "${template.lightTheme}";
       if (checkbox && html) {
-        const input = checkbox;
-        // Typecast to HTMLInputElement
-        const inputEl = input instanceof HTMLInputElement ? input : null;
+        const inputEl = checkbox instanceof HTMLInputElement ? checkbox : null;
         if (!inputEl) return;
         // Set initial state based on current theme
         inputEl.checked = html.getAttribute('data-theme') === darkTheme;
