@@ -1,6 +1,6 @@
 export const template = {
-    website_url: "https://nikkelodeons.github.io",
-    base: "/steiner_lab",
+    website_url: "https://steinerlab.github.io/homepage/",
+    base: "/homepage/",
     menu_left: false,
     transitions: true,
     lightTheme: "dark",
