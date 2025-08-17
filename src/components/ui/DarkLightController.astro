@@ -9,7 +9,7 @@ import {template} from  '../../settings.ts'
     class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
     aria-label="Toggle dark/light mode"
   />
-  <script>
+  <script is:inline>
     document.addEventListener('DOMContentLoaded', function () {
       const checkbox = document.getElementById('theme-toggle');
       const html = document.documentElement;
