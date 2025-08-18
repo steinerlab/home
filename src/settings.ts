@@ -1,14 +1,3 @@
-export const template = {
-    website_url: "https://steinerlab.github.io/homepage/",
-    base: "/homepage/",
-    menu_left: false,
-    transitions: true,
-    lightTheme: "light",
-    darkTheme: "dark",
-    excerptLength: 200,
-    postPerPage: 5
-};
-
 export const profile = {
     fullName: "Steiner Lab",
     title: "",
@@ -26,6 +15,17 @@ export const social = {
     scholar: "",
     inspire: "",
     arxiv: ""
+};
+
+export const template = {
+    website_url: "https://steinerlab.github.io/homepage/",
+    base: "/homepage/",
+    menu_left: false,
+    transitions: true,
+    lightTheme: "light",
+    darkTheme: "dark",
+    excerptLength: 200,
+    postPerPage: 5
 };
 
 export const seo = {
